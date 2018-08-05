@@ -229,7 +229,7 @@ var start_timestamp;
 if (!('webkitSpeechRecognition' in window)) {
   upgrade();
 } else {
-  start_button.style.display = 'inline-block';
+//   start_button.style.display = 'inline-block';
   var recognition = new webkitSpeechRecognition();
   recognition.continuous = true;
   recognition.interimResults = true;
@@ -299,7 +299,7 @@ if (!('webkitSpeechRecognition' in window)) {
   };
 }
 function upgrade() {
-  start_button.style.visibility = 'hidden';
+//   start_button.style.visibility = 'hidden';
   showInfo('info_upgrade');
 }
 var two_line = /\n\n/g;
