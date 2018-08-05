@@ -126,6 +126,9 @@
 
 <script>
 
+var theMapView;
+var pointA = {x: -49.97, y: 41.73};
+ 
 require([
   "esri/Map",
   "esri/views/MapView",
@@ -144,8 +147,8 @@ require([
        // First create a point geometry (this is the location of the Titanic)
       var point = {
         type: "point", // autocasts as new Point()
-        longitude: -49.97,
-        latitude: 41.73
+        longitude: pointA.x,
+        latitude: pointA.y
       };
 
       // Create a symbol for drawing the point
@@ -165,6 +168,7 @@ require([
       });
 
    view.graphics.addMany([pointGraphic]);
+   theMapView = view;
 });
  
 // var langs =
@@ -310,8 +314,16 @@ if (!('webkitSpeechRecognition' in window)) {
     var interim_transcript = '';
     for (var i = event.resultIndex; i < event.results.length; ++i) {
       if (event.results[i].isFinal) {
-        console.log(event.results[i][0].transcript);
-        final_transcript += event.results[i][0].transcript;
+        var result = event.results[i][0].transcript;
+        console.log(result);
+        if (result.toLowerCase() === 'move to point a') {
+          theMapView.goTo({
+            center: [pointA.x, pointA.y],
+            zoom: 15
+          });
+        }
+       
+        final_transcript += result;
       } else {
         interim_transcript += event.results[i][0].transcript;
       }
