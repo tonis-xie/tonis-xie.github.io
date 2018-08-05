@@ -129,6 +129,7 @@
 require([
   "esri/Map",
   "esri/views/MapView",
+  "esri/Graphic",
   "dojo/domReady!"
 ], function(Map, MapView) {
   var map = new Map({
@@ -139,6 +140,31 @@ require([
     container: "viewDiv",  // Reference to the DOM node that will contain the view
     map: map               // References the map object created in step 3
   });
+
+       // First create a point geometry (this is the location of the Titanic)
+      var point = {
+        type: "point", // autocasts as new Point()
+        longitude: -49.97,
+        latitude: 41.73
+      };
+
+      // Create a symbol for drawing the point
+      var markerSymbol = {
+        type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
+        color: [226, 119, 40],
+        outline: { // autocasts as new SimpleLineSymbol()
+          color: [255, 255, 255],
+          width: 2
+        }
+      };
+
+      // Create a graphic and add the geometry and symbol to it
+      var pointGraphic = new Graphic({
+        geometry: point,
+        symbol: markerSymbol
+      });
+
+   view.graphics.addMany([pointGraphic]);
 });
  
 // var langs =
@@ -263,7 +289,7 @@ if (!('webkitSpeechRecognition' in window)) {
     if (ignore_onend) {
       return;
     }
-    start_img.src = 'mic.gif';
+//     start_img.src = 'mic.gif';
     if (!final_transcript) {
       showInfo('info_start');
       return;
