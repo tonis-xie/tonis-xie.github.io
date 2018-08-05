@@ -127,7 +127,7 @@
 <script>
 
 var theMapView;
-var pointA = {x: -49.97, y: 41.73};
+var pointA = {x: -123.11, y: 49.24};
  
 require([
   "esri/Map",
@@ -314,7 +314,7 @@ if (!('webkitSpeechRecognition' in window)) {
     var interim_transcript = '';
     for (var i = event.resultIndex; i < event.results.length; ++i) {
       if (event.results[i].isFinal) {
-        var result = event.results[i][0].transcript;
+        var result = event.results[i][0].transcript.trim();
         console.log(result);
         if (result.toLowerCase() === 'move to point a') {
           theMapView.goTo({
