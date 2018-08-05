@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Web Speech API Demo</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Voice Control Map Demo</title>
+<link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
+<script src="https://js.arcgis.com/4.8/"></script>
 <style>
   * {
     font-family: Verdana, Arial, sans-serif;
@@ -79,6 +82,12 @@
     background-color:transparent;
     padding: 0;
   }
+  html, body, #viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
 </style>
 <h1 class="center" id="headline">
   <a href="http://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html">
@@ -133,7 +142,26 @@
     <select id="select_dialect"></select>
   </div>
 </div>
+
+<div id="viewDiv"></div>
+
 <script>
+
+require([
+  "esri/Map",
+  "esri/views/MapView",
+  "dojo/domReady!"
+], function(Map, MapView) {
+  var map = new Map({
+    basemap: "streets"
+  });
+
+  var view = new MapView({
+    container: "viewDiv",  // Reference to the DOM node that will contain the view
+    map: map               // References the map object created in step 3
+  });
+});
+ 
 var langs =
 [['Afrikaans',       ['af-ZA']],
  ['Bahasa Indonesia',['id-ID']],
