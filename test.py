@@ -1,8 +1,8 @@
 import urllib
 import json
 
-def getData(uri):
-    params = urllib.urlencode({'f': 'pjson'})
+def getData(uri, where=''):
+    params = urllib.urlencode({'f': 'pjson'}) if where == '' else urllib.urlencode({'f': 'pjson', 'where': where})
     baseurl = 'http://ww1.yorkmaps.ca/arcgis/rest/services/'
     fullurl = '{0}{1}?{2}'.format(baseurl, uri, params)
     print fullurl
@@ -17,6 +17,6 @@ for service in services:
     data = getData(uri)
     layers = data['layers']
     for layer in layers:
-        uri += '/{0}'.format(layer['id'])
-        data = getData(uri)
-        print data
+        uri += '/{0}/query'.format(layer['id'])
+        data = getData(uri, 'ObjectId>0')
+        print len(data['features'])
