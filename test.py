@@ -19,4 +19,7 @@ for service in services:
     for layer in layers:
         uri += '/{0}/query'.format(layer['id'])
         data = getData(uri, 'ObjectId>0')
-        print len(data['features'])
+        if 'features' in data:
+            print len(data['features'])
+        else:
+            print data  
