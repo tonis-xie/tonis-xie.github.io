@@ -13,5 +13,10 @@ def getData(uri):
 data = getData('Hosted')
 services = data['services']
 for service in services:
-    data = getData(service['name'] + '/' + service['type'])
-    print data['layers']
+    uri = service['name'] + '/' + service['type']
+    data = getData(uri)
+    layers = data['layers']
+    for layer in layers:
+        uri += '/{0}'.format(layer['id'])
+        data = getData(uri)
+        print data
