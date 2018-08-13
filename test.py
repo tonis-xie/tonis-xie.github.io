@@ -1,6 +1,13 @@
 import urllib
 import json
 from datetime import datetime
+import argparse
+from time import sleep
+
+parser = argparse.ArgumentParser(description='run test against ArcGIS services')
+parser.add_argument('--wait', help='wait minutes before next test')
+args = vars(parser.parse_args())
+wait = float(args['wait']) if args['wait'] != None else None
 
 def output(line):
     line = '{0} {1}'.format(datetime.now().isoformat(), line)
@@ -18,16 +25,23 @@ def getData(uri, where=''):
     result = f.read()
     return json.loads(result)
 
-data = getData('Hosted')
-services = data['services']
-for service in services:
-    uri = service['name'] + '/' + service['type']
-    data = getData(uri)
-    layers = data['layers']
-    for layer in layers:
-        uri += '/{0}/query'.format(layer['id'])
-        data = getData(uri, 'ObjectId>0')
-        if 'features' in data:
-            output(len(data['features']))
-        else:
-            output(data)
+while 1:
+    data = getData('Hosted')
+    services = data['services']
+    for service in services:
+        baseuri = service['name'] + '/' + service['type']
+        data = getData(baseuri)
+        layers = data['layers']
+        for layer in layers:
+            uri = baseuri + '/{0}/query'.format(layer['id'])
+            # output(uri)
+            data = getData(uri, 'ObjectId>0')
+            if 'features' in data:
+                output(len(data['features']))
+            else:
+                output(data)
+    if wait == None:
+        break;
+    else:
+        sleep(wait*60)
+
