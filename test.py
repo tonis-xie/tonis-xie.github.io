@@ -3,6 +3,7 @@ import json
 from datetime import datetime
 import argparse
 from time import sleep
+from time import time
 
 parser = argparse.ArgumentParser(description='run test against ArcGIS services')
 parser.add_argument('--wait', help='wait minutes before next test')
@@ -16,13 +17,17 @@ def output(line):
     f.close()
     print line
 
+def outputResponse(line, respTime):
+    output('{0} Response Time: {1}ms'.format(line, int(round(respTime))))
+
 def getData(uri, where=''):
     params = urllib.urlencode({'f': 'pjson'}) if where == '' else urllib.urlencode({'f': 'pjson', 'where': where})
     baseurl = 'http://ww1.yorkmaps.ca/arcgis/rest/services/'
     fullurl = '{0}{1}?{2}'.format(baseurl, uri, params)
-    output(fullurl)
-    f = urllib.urlopen(fullurl)
-    result = f.read()
+    startTime = time()
+    result = urllib.urlopen(fullurl).read()
+    endTime = time()
+    outputResponse(fullurl, (endTime - startTime)*1000)
     return json.loads(result)
 
 while 1:

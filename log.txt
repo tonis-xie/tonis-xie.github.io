@@ -1,0 +1,53 @@
+2018-09-18T08:36:40.656928 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted?f=pjson
+2018-09-18T08:36:42.843195 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Beach_Water_Testing_Open/FeatureServer?f=pjson
+2018-09-18T08:36:43.458497 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Beach_Water_Testing_Open/FeatureServer/0/query?where=ObjectId%3E0&f=pjson
+2018-09-18T08:41:01.101621 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted?f=pjson 1.67836594582
+2018-09-18T08:41:01.927413 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Beach_Water_Testing_Open/FeatureServer?f=pjson 0.824796915054
+2018-09-18T08:41:02.940828 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Beach_Water_Testing_Open/FeatureServer/0/query?where=ObjectId%3E0&f=pjson 1.00990414619
+2018-09-18T08:41:02.941647 14
+2018-09-18T08:41:03.761528 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/EarlyDevelopmentInstrument/FeatureServer?f=pjson 0.818232059479
+2018-09-18T08:42:34.701392 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted?f=pjson Response Time: 157.0ms
+2018-09-18T08:42:35.530834 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Beach_Water_Testing_Open/FeatureServer?f=pjson Response Time: 83.0ms
+2018-09-18T08:42:36.367288 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Beach_Water_Testing_Open/FeatureServer/0/query?where=ObjectId%3E0&f=pjson Response Time: 84.0ms
+2018-09-18T08:42:36.368086 14
+2018-09-18T08:42:37.174852 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/EarlyDevelopmentInstrument/FeatureServer?f=pjson Response Time: 81.0ms
+2018-09-18T08:42:58.610952 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/EarlyDevelopmentInstrument/FeatureServer/0/query?where=ObjectId%3E0&f=pjson Response Time: 2143.0ms
+2018-09-18T08:42:58.683696 64
+2018-09-18T08:42:59.487849 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/hsPoliceStation/FeatureServer?f=pjson Response Time: 80.0ms
+2018-09-18T08:43:00.293492 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/hsPoliceStation/FeatureServer/0/query?where=ObjectId%3E0&f=pjson Response Time: 80.0ms
+2018-09-18T08:43:00.294455 17
+2018-09-18T08:43:01.130138 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/plnLotConcession/FeatureServer?f=pjson Response Time: 83.0ms
+2018-09-18T08:43:37.978336 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted?f=pjson Response Time: 171ms
+2018-09-18T08:43:38.591181 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Beach_Water_Testing_Open/FeatureServer?f=pjson Response Time: 61ms
+2018-09-18T08:43:39.431224 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Beach_Water_Testing_Open/FeatureServer/0/query?where=ObjectId%3E0&f=pjson Response Time: 84ms
+2018-09-18T08:43:39.432037 14
+2018-09-18T08:43:40.434649 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/EarlyDevelopmentInstrument/FeatureServer?f=pjson Response Time: 100ms
+2018-09-18T08:44:19.761757 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/EarlyDevelopmentInstrument/FeatureServer/0/query?where=ObjectId%3E0&f=pjson Response Time: 3933ms
+2018-09-18T08:44:19.832829 64
+2018-09-18T08:44:20.573648 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/hsPoliceStation/FeatureServer?f=pjson Response Time: 74ms
+2018-09-18T08:44:21.393202 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/hsPoliceStation/FeatureServer/0/query?where=ObjectId%3E0&f=pjson Response Time: 81ms
+2018-09-18T08:44:21.393950 17
+2018-09-18T08:44:22.212920 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/plnLotConcession/FeatureServer?f=pjson Response Time: 82ms
+2018-09-18T08:44:38.203372 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/plnLotConcession/FeatureServer/0/query?where=ObjectId%3E0&f=pjson Response Time: 1599ms
+2018-09-18T08:44:38.341915 2000
+2018-09-18T08:44:39.005002 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Red_Light_Cameras_Open/FeatureServer?f=pjson Response Time: 66ms
+2018-09-18T08:44:40.034609 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Red_Light_Cameras_Open/FeatureServer/0/query?where=ObjectId%3E0&f=pjson Response Time: 101ms
+2018-09-18T08:44:40.035635 40
+2018-09-18T08:44:40.856131 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Regional_Forest_Boundary_Open/FeatureServer?f=pjson Response Time: 82ms
+2018-09-18T08:44:42.494012 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Regional_Forest_Boundary_Open/FeatureServer/0/query?where=ObjectId%3E0&f=pjson Response Time: 164ms
+2018-09-18T08:44:42.499060 20
+2018-09-18T08:44:43.318207 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Route_Regional_Road_Open/FeatureServer?f=pjson Response Time: 82ms
+2018-09-18T08:45:22.423856 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted?f=pjson Response Time: 1790ms
+2018-09-18T08:45:23.244691 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Beach_Water_Testing_Open/FeatureServer?f=pjson Response Time: 820ms
+2018-09-18T08:45:24.063563 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Beach_Water_Testing_Open/FeatureServer/0/query?where=ObjectId%3E0&f=pjson Response Time: 817ms
+2018-09-18T08:45:24.064278 14
+2018-09-18T08:45:24.889431 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/EarlyDevelopmentInstrument/FeatureServer?f=pjson Response Time: 824ms
+2018-09-18T08:45:34.985927 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/EarlyDevelopmentInstrument/FeatureServer/0/query?where=ObjectId%3E0&f=pjson Response Time: 10096ms
+2018-09-18T08:45:35.052157 64
+2018-09-18T08:45:35.736621 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/hsPoliceStation/FeatureServer?f=pjson Response Time: 684ms
+2018-09-18T08:45:36.553997 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/hsPoliceStation/FeatureServer/0/query?where=ObjectId%3E0&f=pjson Response Time: 805ms
+2018-09-18T08:45:36.554777 17
+2018-09-18T08:45:37.375780 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/plnLotConcession/FeatureServer?f=pjson Response Time: 819ms
+2018-09-18T08:45:59.263868 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/plnLotConcession/FeatureServer/0/query?where=ObjectId%3E0&f=pjson Response Time: 21887ms
+2018-09-18T08:45:59.383007 2000
+2018-09-18T08:46:00.127632 http://ww1.yorkmaps.ca/arcgis/rest/services/Hosted/Red_Light_Cameras_Open/FeatureServer?f=pjson Response Time: 744ms
